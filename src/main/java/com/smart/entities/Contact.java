@@ -27,9 +27,9 @@ public class Contact implements Serializable
 	private String email;
 	private String phone;
 	private String image;
-	@Column(length=50000)
+	@Column(columnDefinition = "TEXT")
 	private String description;
-	
+
 	@ManyToOne
 	@JsonIgnore
 	private User user;
